@@ -6,7 +6,7 @@ const app = express();
 
 app.user(express.json());
 
-app.post("/books", (req, res) =>{
+app.post("/books", (req, res) => {
     const { id, title, author, publishedAt } = req.body;
     const book = { id, title, author, publishedAt };
     books.push(book);
@@ -15,4 +15,4 @@ app.post("/books", (req, res) =>{
 
 // MANDAR O SERVIDOR RODAR
 
-app.listen(3333, ( => ))
+app.listen(3333, () => console.log("O servidor está funcionando"))
