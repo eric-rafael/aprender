@@ -4,7 +4,7 @@ let books =[];
 // CRIAR APP
 const app = express();
 
-app.user(express.json());
+app.use(express.json());
 
 app.post("/books", (req, res) => {
     const { id, title, author, publishedAt } = req.body;
