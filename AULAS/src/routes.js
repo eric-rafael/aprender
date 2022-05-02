@@ -1,16 +1,15 @@
 const { Router } = require('express');
-const { User } = require('./models/User')
+const User = require('./models/User.js')
+
+const UserController = require ('./controller/UserController')
 
 const router = Router()
 // essa variável router contém todos os métodos HTTP
 
-router.post('/', async (req, res) => {
-    const { name, email } = req.body
+router.post('/user-create', UserController.createuser )
+router.put('/user-update/:id', UserController.updateUser )
+router.get('/user-list', UserController.listUsers )
+router.delete('/user-delete/:id', UserController.deleteUser )
 
-    const user = await User.create({name, email})
-
-    res.json({user})
-
-});
 
 module.exports = router;
