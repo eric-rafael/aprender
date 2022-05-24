@@ -1,0 +1,19 @@
+html {
+    background-color: grey;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    color: orange;
+}
+
+p a {
+    color: black;
+}
+
+a {
+    color: aliceblue;
+}

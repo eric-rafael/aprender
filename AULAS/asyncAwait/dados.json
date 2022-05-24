@@ -1,0 +1,9 @@
+{
+  "profile": { "aula": [
+    "javascript",
+    "html",
+    "css"
+    ]
+  },
+  "clientes": { "name": "Joana" }
+}
